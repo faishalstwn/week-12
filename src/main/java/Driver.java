@@ -1,5 +1,4 @@
 import src.main.java.Counter;
-//test sonar
 //
 public class Driver {
 
