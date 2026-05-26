@@ -27,4 +27,8 @@ public class Counter {
     public void multiplyBy(int value) {
         count *= value;
     }
+
+    public void reset() {
+        count = 0;
+    }
 }
