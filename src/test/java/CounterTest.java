@@ -1,6 +1,5 @@
 
-import static org.junit.Assert.*;
-import src.main.java.*;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class CounterTest {
