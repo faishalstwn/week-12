@@ -1,11 +1,9 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
 name: Build Project
 
 on:
   push:
     branches: [ main ]
+
   pull_request:
     branches: [ main ]
 
@@ -22,6 +20,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+
     - name: Build, test, and analyze
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
