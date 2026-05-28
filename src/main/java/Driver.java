@@ -1,32 +1,32 @@
-//
-
 public class Driver {
 
-	public static void main(String[] args) {
+    private static final String MESSAGE = "Current count: ";
+    private static final String RESET_MESSAGE = "Current count after reset: ";
 
-		Counter counter = new Counter();
+    public static void main(String[] args) {
 
-		System.out.println("Current count: " + counter.getCount());
+        Counter counter = new Counter();
 
-		counter.increment();
+        System.out.println(MESSAGE + counter.getCount());
 
-		System.out.println("Current count: " + counter.getCount());
+        counter.increment();
 
-		counter.increaseBy(5);
+        System.out.println(MESSAGE + counter.getCount());
 
-		System.out.println("Current count: " + counter.getCount());
+        counter.increaseBy(5);
 
-		counter.decreaseBy(2);
+        System.out.println(MESSAGE + counter.getCount());
 
-		System.out.println("Current count: " + counter.getCount());
+        counter.decreaseBy(2);
 
-		counter.multiplyBy(6);
+        System.out.println(MESSAGE + counter.getCount());
 
-		System.out.println("Current count: " + counter.getCount());
+        counter.multiplyBy(6);
 
-		
-		counter.reset();
+        System.out.println(MESSAGE + counter.getCount());
 
-		System.out.println("Current count after reset: " + counter.getCount());
-	}
+        counter.reset();
+
+        System.out.println(RESET_MESSAGE + counter.getCount());
+    }
 }
